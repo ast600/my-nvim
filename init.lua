@@ -87,4 +87,5 @@ vim.keymap.set("n", "<leader>wd", function()
     vim.diagnostic.setqflist({severity = {min = vim.diagnostic.severity.WARN}})
 end, {desc = 'Workspace diagnostic'})
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, {desc = 'Hover'})
+vim.opt.wildignore:append{'**/.git/**', '**/target/**', '**/.metals/**'}
 
